@@ -8,4 +8,4 @@ class Work extends Component{
     }
 }
 
-export default Work
+export default MyThings

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, Switch } from "react-router-dom"
+import { Route, Link } from "react-router-dom"
 import styled from 'styled-components';
 import Home from '../Home/Home'
+// import MyThings from '../My_Work/MyThings'
 import './App.css';
 
 document.body.style.margin = 0
@@ -42,9 +43,10 @@ class App extends Component{
         <img className="placeholder" src={require("../../images/me.jpg")} alt="placeholder"></img>
         <nav>
           <ul>
-            <li className="SideNav">About Me</li>
-            <li className="SideNav">My Work</li>
-            <li className="SideNav">Contact Me</li>
+            <Link to="/"><li className="SideNav">Home</li></Link>
+            <Link to="/about"><li className="SideNav">About Me</li></Link>
+            <Link to="/work"><li className="SideNav">My Work</li></Link>
+            <Link to="/contact"><li className="SideNav">Contact Me</li></Link>
             <a href="https://www.github.com/willmca" target="_blank"><li className="SideNav">Github</li></a>
             <a href="https://www.linkedin.com/in/will-mcallister/" target="_blank"><li className="SideNav">LinkedIn</li></a>
             <a href="https://medium.com/@mcallister.william.r" target="_blank"><li className="SideNav">Blog</li></a>
@@ -54,6 +56,8 @@ class App extends Component{
       </NavBar>
       <main>
         <Route path="/" exact render = {props => <Home {...props}/>}/>
+        {/* <Route path="/work" exact render = {props => <MyThings {...props}/>}/> */}
+
       </main>
       {/* <Footer>
         <ul className="footer">
