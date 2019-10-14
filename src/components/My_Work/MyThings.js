@@ -1,6 +1,6 @@
-import React, { Component } from 'React'
+import React, { Component } from 'react'
 
-class Work extends Component{
+class MyThings extends Component{
     render(){
         return(
             <h1>YO</h1>

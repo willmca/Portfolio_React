@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import { Route, Link } from "react-router-dom"
 import styled from 'styled-components';
 import Home from '../Home/Home'
-// import MyThings from '../My_Work/MyThings'
+import MyThings from '../My_Work/MyThings'
+import About from '../About/About'
+import Contact from '../Contact/Contact'
 import './App.css';
 
 document.body.style.margin = 0
@@ -56,15 +58,10 @@ class App extends Component{
       </NavBar>
       <main>
         <Route path="/" exact render = {props => <Home {...props}/>}/>
-        {/* <Route path="/work" exact render = {props => <MyThings {...props}/>}/> */}
-
+        <Route path="/work" exact render = {props => <MyThings {...props}/>}/>
+        <Route path="/about" exact render = {props => <About {...props}/>}/>
+        <Route path="/contact" exact render = {props => <Contact {...props}/>}/>
       </main>
-      {/* <Footer>
-        <ul className="footer">
-          <li className="footerLink">Github</li>
-          <li className="footerLink">Linkedin</li>
-        </ul>
-      </Footer> */}
     </div>
     )
   }
