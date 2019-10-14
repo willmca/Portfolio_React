@@ -3,6 +3,8 @@
   font-size:24px;
   text-align:center;
   margin:15px 0;
+  position:relative;
+  bottom:50px;
 }
 ul{
 margin:0; 
@@ -10,9 +12,13 @@ padding:0;
 margin-bottom:10px;
 }
 .placeholder{
-max-width:100%;
-max-height:300px;
+height:200px;
+width:200px;
 border:solid white 1px;
+border-radius:100%;
+background-image:url('./../../images/me.jpg');
+background-size:cover;
+background-position: center center;
 }
 .footer{
   list-style-type: none;
@@ -40,6 +46,19 @@ main{
 a{
   text-decoration: none;
   color:white;
+}
+.logos{
+  display: flex;
+  flex-direction:row;
+  position: relative;
+  bottom:50px;
+}
+.logo{
+  margin:4px;
+}
+.logo:hover{
+  opacity:0.5;
+  transform:scale(1.5);
 }
 
 @media (max-width:700px){

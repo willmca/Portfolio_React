@@ -6,6 +6,8 @@ import Home from '../Home/Home'
 import MyThings from '../My_Work/MyThings'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faMedium, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import './App.css';
 
 document.body.style.margin = 0
@@ -42,16 +44,18 @@ class App extends Component{
     return(
     <div className="App">
       <NavBar>
-        <img className="placeholder" src={require("../../images/me.jpg")} alt="placeholder"></img>
+        <div className="placeholder"></div>
+        <div className="logos">
+        <a href="https://www.linkedin.com/in/will-mcallister/" target="_blank"> <FontAwesomeIcon icon={faLinkedinIn} className="logo"/></a>
+          <a href="https://www.github.com/willmca" target="_blank">        <FontAwesomeIcon icon={faGithub} className="logo"/></a>
+          <a href="https://medium.com/@mcallister.william.r" target="_blank"> <FontAwesomeIcon icon={faMedium} className="logo"/></a>
+        </div>
         <nav>
           <ul>
             <Link to="/"><li className="SideNav">Home</li></Link>
             <Link to="/about"><li className="SideNav">About Me</li></Link>
             <Link to="/work"><li className="SideNav">My Work</li></Link>
             <Link to="/contact"><li className="SideNav">Contact Me</li></Link>
-            <a href="https://www.github.com/willmca" target="_blank"><li className="SideNav">Github</li></a>
-            <a href="https://www.linkedin.com/in/will-mcallister/" target="_blank"><li className="SideNav">LinkedIn</li></a>
-            <a href="https://medium.com/@mcallister.william.r" target="_blank"><li className="SideNav">Blog</li></a>
             <a href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing" target="_blank"><li className="SideNav">Resumé</li></a>
           </ul>
         </nav>
