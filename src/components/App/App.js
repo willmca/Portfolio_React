@@ -57,7 +57,7 @@ class App extends Component {
                 <Link to="/contact">
                   <li className="SideNav">Contact Me</li>
                 </Link>
-                <a
+                <a 
                   href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing"
                   target="_blank"
                 >
@@ -66,16 +66,16 @@ class App extends Component {
               </ul>
             </nav>
             <div className="logos">
-              <a
+              <a className="links"
                 href="https://www.linkedin.com/in/will-mcallister/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} className="logo" />
               </a>
-              <a href="https://www.github.com/willmca" target="_blank">
+              <a className="links" href="https://www.github.com/willmca" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className="logo" />
               </a>
-              <a
+              <a className="links"
                 href="https://medium.com/@mcallister.william.r"
                 target="_blank"
               >

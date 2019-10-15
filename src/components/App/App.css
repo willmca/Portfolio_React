@@ -57,11 +57,11 @@ a{
   flex-direction: column;
   align-items:center;
   position:relative;
-  bottom:10%;
+  bottom:3%;
 }
 .componentNav{
   position:relative;
-  top:10%;
+  top:2%;
 }
 .logos{
   display: flex;
@@ -71,11 +71,12 @@ a{
   top:35px;
 }
 .logo{
-  margin:4px;
+  margin:8px;
+  transform: scale(1.5);
 }
 .logo:hover{
   opacity:0.5;
-  transform:scale(1.5);
+  transform:scale(2);
 }
 
 @media (max-width:700px){
