@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import './MyThings.css'
 
 class MyThings extends Component{
     render(){
         return(
-            <h1>YO</h1>
+        <div>
+            
+        </div>
         )
     }
 }

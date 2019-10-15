@@ -3,8 +3,6 @@
   font-size:24px;
   text-align:center;
   margin:15px 0;
-  position:relative;
-  bottom:50px;
 }
 ul{
 margin:0; 
@@ -46,12 +44,31 @@ main{
 a{
   text-decoration: none;
   color:white;
+  font-family: 'Roboto Slab', serif;
+
+}
+.nameTitle{
+  font-size:22px;
+  font-family: 'Roboto Slab', serif;
+  margin-top:10px;
+}
+.logosAndPhoto{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  position:relative;
+  bottom:10%;
+}
+.componentNav{
+  position:relative;
+  top:10%;
 }
 .logos{
   display: flex;
   flex-direction:row;
-  position: relative;
-  bottom:50px;
+  justify-content: center;
+  position:relative;
+  top:35px;
 }
 .logo{
   margin:4px;
@@ -67,5 +84,23 @@ a{
   }
   .SideNav:hover{
     transform:scale(1.1);
+  }
+}
+@media (max-width:650px){
+  .placeholder{
+    width:125px;
+    height:125px;
+  }
+  .nameTitle{
+    font-size:14px;
+  }
+}
+@media (max-width:400px){
+  .placeholder{
+    width:100px;
+    height:100px;
+  }
+  .nameTitle{
+    font-size:10px;
   }
 }
