@@ -2,7 +2,7 @@
   list-style-type: none;
   font-size:24px;
   text-align:center;
-  margin:15px 0;
+  margin:20px 0;
 }
 ul{
 margin:0; 
@@ -39,7 +39,8 @@ h1{
 main{
   margin-left:33%;
   height:100vh;
-  background:linear-gradient(to right, white, whitesmoke);
+  /* background:linear-gradient(to right, white, whitesmoke); */
+  background-size:cover;
 }
 .links{
   text-decoration: none;

@@ -12,9 +12,12 @@ class Contact extends Component{
 
     render(){
         return(
-            <div className="home">
-                <h1>Will McAllister | Software Engineer
-                </h1>
+            <div className="wrapper">
+                <div className="contact">
+                <h1>Will McAllister | Software Engineer</h1>
+                <h2>Contact Information:</h2>
+                <h3>Email: mcallister.william.r@gmail.com</h3>
+                </div>
             </div>
         )
     }

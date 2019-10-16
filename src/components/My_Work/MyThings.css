@@ -23,7 +23,7 @@
     color:white;
 }
 .ProjectPhoto{
-    max-width: 300px;
+    width: 300px;
     max-height: 200px;
     padding-right:10px;
     float: left;

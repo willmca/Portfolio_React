@@ -48,18 +48,18 @@ class App extends Component {
                 <Link className="links"  to="/">
                   <li className="SideNav">Home</li>
                 </Link>
-                <Link className="links" to="/about">
+                {/* <Link className="links" to="/about">
                   <li className="SideNav">About Me</li>
-                </Link>
+                </Link> */}
                 <Link className="links" to="/work">
                   <li className="SideNav">My Work</li>
                 </Link>
-                <Link className="links" to="/contact">
+                {/* <Link className="links" to="/contact">
                   <li className="SideNav">Contact Me</li>
-                </Link>
+                </Link> */}
                 <a className="links"
                   href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <li className="SideNav">Resumé</li>
                 </a>
@@ -68,16 +68,16 @@ class App extends Component {
             <div className="logos">
               <a className="logoLinks"
                 href="https://www.linkedin.com/in/will-mcallister/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} className="logo" />
               </a>
-              <a className="logoLinks" href="https://www.github.com/willmca" target="_blank">
+              <a className="logoLinks" href="https://www.github.com/willmca" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="logo" />
               </a>
               <a className="logoLinks"
                 href="https://medium.com/@mcallister.william.r"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faMedium} className="logo" />
               </a>

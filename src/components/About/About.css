@@ -1,0 +1,23 @@
+.intro,.skills,.contact{
+    margin:20px 20px;
+    font-size:24px;
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
+.introHolder,.skillsHolder,.contactHolder{
+    width:85%;
+    margin:0 auto;
+    color:black;
+}
+@media (max-width:700px){
+    .intro,.skills,.contact{
+        font-size:14px;
+    }
+    h1{
+        font-size:20px;
+        padding:2px;
+    }
+}
