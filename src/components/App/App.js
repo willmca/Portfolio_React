@@ -18,7 +18,7 @@ document.body.style.margin = 0;
 
 const NavBar = styled.nav`
   background-color: lightblue;
-  height: 100vh;
+  min-height: 100vh;
   width: 33%;
   left: 0;
   position: fixed;
