@@ -98,6 +98,9 @@ main{
   .nameTitle{
     font-size:14px;
   }
+  .logosAndPhoto{
+    margin-top:-20%;  
+  }
 }
 @media (max-width:400px){
   .placeholder{
@@ -107,6 +110,4 @@ main{
   .nameTitle{
     font-size:10px;
   }
-  .logosAndPhoto{
-margin-top:-280px;  }
 }
