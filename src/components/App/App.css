@@ -99,7 +99,7 @@ main{
     font-size:14px;
   }
   .logosAndPhoto{
-    margin-top:-210%;  
+    margin-top:-50%;  
   }
 }
 @media (max-width:400px){
@@ -109,5 +109,8 @@ main{
   }
   .nameTitle{
     font-size:10px;
+  }
+  .logosAndPhoto{
+    margin-top:-100%;  
   }
 }

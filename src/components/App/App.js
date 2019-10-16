@@ -28,6 +28,9 @@ const NavBar = styled.nav`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  top:0;
+  bottom:0;
+  overflow:auto;
 `;
 
 class App extends Component {
