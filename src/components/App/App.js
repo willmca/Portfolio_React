@@ -45,19 +45,19 @@ class App extends Component {
             <div className="componentNav">
             <nav>
               <ul>
-                <Link to="/">
+                <Link className="links"  to="/">
                   <li className="SideNav">Home</li>
                 </Link>
-                <Link to="/about">
+                <Link className="links" to="/about">
                   <li className="SideNav">About Me</li>
                 </Link>
-                <Link to="/work">
+                <Link className="links" to="/work">
                   <li className="SideNav">My Work</li>
                 </Link>
-                <Link to="/contact">
+                <Link className="links" to="/contact">
                   <li className="SideNav">Contact Me</li>
                 </Link>
-                <a 
+                <a className="links"
                   href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing"
                   target="_blank"
                 >
@@ -66,16 +66,16 @@ class App extends Component {
               </ul>
             </nav>
             <div className="logos">
-              <a className="links"
+              <a className="logoLinks"
                 href="https://www.linkedin.com/in/will-mcallister/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} className="logo" />
               </a>
-              <a className="links" href="https://www.github.com/willmca" target="_blank">
+              <a className="logoLinks" href="https://www.github.com/willmca" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className="logo" />
               </a>
-              <a className="links"
+              <a className="logoLinks"
                 href="https://medium.com/@mcallister.william.r"
                 target="_blank"
               >

@@ -41,7 +41,7 @@ main{
   height:100vh;
   background:linear-gradient(to right, white, whitesmoke);
 }
-a{
+.links{
   text-decoration: none;
   color:white;
   font-family: 'Roboto Slab', serif;
@@ -71,12 +71,14 @@ a{
   top:35px;
 }
 .logo{
-  margin:8px;
+  margin:0 8px;
   transform: scale(1.5);
 }
 .logo:hover{
   opacity:0.5;
-  transform:scale(2);
+}
+.logoLinks{
+  color:white;
 }
 
 @media (max-width:700px){
