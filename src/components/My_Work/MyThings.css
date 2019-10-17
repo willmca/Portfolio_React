@@ -76,6 +76,13 @@ font-size:18px;
         font-size:12px;
     }
 }
+@media (max-width:500px){
+    .container{
+        margin-top:75px;
+        width:95%;
+    }
+    
+}
 @media (max-width:450px){
     .ProjectPhoto{
         width:150px;

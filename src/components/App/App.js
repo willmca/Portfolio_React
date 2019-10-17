@@ -14,8 +14,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {Helmet} from "react-helmet";
 import preview from "./../../images/preview.png"
-import me from "./../../images/me.jpg"
 import "./App.css";
+import me from "./../../images/me.jpg"
+
+
 
 document.body.style.margin = 0;
 
@@ -34,7 +36,26 @@ const NavBar = styled.nav`
   top:0;
   bottom:0;
   overflow:auto;
-`;
+  @media (max-width:500px){
+    display:none;
+  }
+`
+
+const HeaderNav = styled.header`
+background-color:lightblue;
+height:50px;
+width:100%;
+top:0;
+position:fixed;
+color:white;
+font-size:18px;
+display:none;
+align-items:center;
+@media (max-width:500px) {
+  display:flex;
+  flex-direction:row;
+}
+`
 
 class App extends Component {
   constructor(props) {
@@ -59,6 +80,36 @@ class App extends Component {
 
 
        </Helmet>
+       <HeaderNav>
+            <Link className="headerLinks"  to="/">
+                <li className="HeaderNavLinks">Home</li>
+            </Link>
+            <Link className="headerLinks"  to="/work">
+                <li className="HeaderNavLinks">My Work</li>
+            </Link>
+                <a className="headerLinks"
+                  href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing"
+                  target="_blank" rel="noopener noreferrer">
+                <li className="HeaderNavLinks">Resumé</li>
+                </a>
+            <div className="logos">
+              <a className="headerLogoLinks"
+                href="https://www.linkedin.com/in/will-mcallister/"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} className="logo" />
+              </a>
+              <a className="headerLogoLinks" href="https://www.github.com/willmca" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="logo" />
+              </a>
+              <a className="headerLogoLinks"
+                href="https://medium.com/@mcallister.william.r"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faMedium} className="logo" />
+              </a>
+            </div>
+       </HeaderNav>
         <NavBar>
           <div className="logosAndPhoto">
             <div className="placeholder"></div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom'
 import './Home.css'
+import me from "./../../images/me.jpg"
 
 
 
@@ -15,6 +16,7 @@ class Home extends Component{
         return(
             <div className="home">
                 <div className="titleHolder">
+                <img className="lilMe" src={me} />
                     <h1>Will McAllister | Software Engineer
                     </h1>
                 </div>
