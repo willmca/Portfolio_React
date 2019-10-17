@@ -12,6 +12,8 @@ import {
   faMedium,
   faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
+import {Helmet} from "react-helmet";
+import preview from "./../../images/preview.png"
 import "./App.css";
 
 document.body.style.margin = 0;
@@ -40,6 +42,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Will McAllister | Software Engineer</title>
+                <meta name="description" content="Where there's a Will there's a way!" />
+                <meta name="image" content={preview} />
+       </Helmet>
         <NavBar>
           <div className="logosAndPhoto">
             <div className="placeholder"></div>
