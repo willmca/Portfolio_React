@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {Helmet} from "react-helmet";
 import preview from "./../../images/preview.png"
+import me from "./../../images/me.jpg"
 import "./App.css";
 
 document.body.style.margin = 0;
@@ -45,8 +46,18 @@ class App extends Component {
         <Helmet>
                 <meta charSet="utf-8" />
                 <title>Will McAllister | Software Engineer</title>
-                <meta name="description" content="Where there's a Will there's a way!" />
-                <meta name="image" content={preview} />
+                <meta name="og:type" content="website" />
+                <meta name="og:description" content="Where there's a Will there's a way!" />
+                <meta name="og:image" content={preview} />
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="theme-color" content="#000000" />
+                <meta name="description" content="Will McAllister | Software Engineer"/>
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab&display=swap" rel="stylesheet" />
+                <link rel="apple-touch-icon" href={me} />
+
+
+
        </Helmet>
         <NavBar>
           <div className="logosAndPhoto">
