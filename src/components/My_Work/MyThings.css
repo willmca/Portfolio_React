@@ -56,8 +56,8 @@ font-size:18px;
         font-size:18px;
     }
     .ProjectPhoto{
-    height:150px;
-    width:225px;
+    height:180px;
+    width:255px;
     }
     .ProjectDescription{
         font-size:14px;
@@ -81,11 +81,11 @@ font-size:18px;
         margin-top:75px;
         width:95%;
     }
-    
-}
-@media (max-width:450px){
+    .ProjectDescription{
+        text-align:center;
+    }
     .ProjectPhoto{
-        width:150px;
-        height:150px;
+        width:350px;
+        height:300px;
     }
 }
