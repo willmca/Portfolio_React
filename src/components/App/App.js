@@ -88,7 +88,7 @@ class App extends Component {
                 <li className="HeaderNavLinks">My Work</li>
             </Link>
                 <a className="headerLinks"
-                  href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1yPOjjKHxHC2UtGSwJIIn4vhL-Db5Lw1MWmlBnHZabe4/edit?usp=sharing"
                   target="_blank" rel="noopener noreferrer">
                 <li className="HeaderNavLinks">Resumé</li>
                 </a>
