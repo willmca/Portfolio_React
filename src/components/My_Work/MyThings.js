@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './MyThings.css'
+import project4Photo from './../../images/FF_TA.png'
 import project3Photo from './../../images/Project3.png'
 import project2Photo from './../../images/Project2.png'
 import project1Photo from './../../images/Project1.png'
@@ -8,6 +9,18 @@ class MyThings extends Component{
     render(){
         return(
         <div className="container">
+            <div className="Project">
+                <h1 className="ProjectTitle">Fantasy Football Trade Analyzer</h1>
+                <div className="ProjectInfo">
+                    <img className="ProjectPhoto" src={project4Photo} alt="Fantasy Football Trade Analyzer"></img>
+                    <p className="ProjectDescription">Fantasy Football Trade Analyzer is a full stack application that utilizes a database I created with MongoDB, Express and Node. The database contains 300 NFL players and utilizes an algorithm I created to assign the players ratings on a scale of 0-15 based on their a collection of rankings form fantasy football experts. The front-end is built using React, and allows the user to construct a potential trade and evaluate the strength of each side to determine the winner and loser of the trade. I utilized styled components, the component life-cycle, and responsive-design to create a front-end that looks great on any device. This project provided me a great opportunity to combine my passion for fantasy sports with my passion for software engineering and create a full-stack application that serves a purpose for Fantasy Football players everywhere.</p>
+                    <div className="ProjectLinks">
+                        <a href="https://fantasy-football-trade-analyzer.netlify.com" target="_blank" rel="noopener noreferrer" className="projectLink"><h3>Deployed App</h3></a>
+                        <a href="https://github.com/willmca/Fantasy_Football_Trade_Analyzer_Frontend" target="_blank" rel="noopener noreferrer" className="projectLink"><h3>Github Repo</h3></a>
+                        <a href="https://medium.com/@mcallister.william.r/building-a-fantasy-football-trade-analyzer-6daa5dc4980f" target="_blank" rel="noopener noreferrer" className="projectLink"><h3>Blog Post</h3></a>
+                    </div>
+                </div>
+            </div>
             <div className="Project">
                 <h1 className="ProjectTitle">Photos From the Great Beyond</h1>
                 <div className="ProjectInfo">

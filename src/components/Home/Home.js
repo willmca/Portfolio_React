@@ -16,7 +16,7 @@ class Home extends Component{
         return(
             <div className="home">
                 <div className="titleHolder">
-                <img className="lilMe" src={me} />
+                <img className="lilMe" src={me} alt="Will McAllister" />
                     <h1>Will McAllister | Software Engineer
                     </h1>
                 </div>
