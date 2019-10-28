@@ -15,7 +15,8 @@ import {
 import {Helmet} from "react-helmet";
 import preview from "./../../images/preview.png"
 import "./App.css";
-import me from "./../../images/me.jpg"
+import me from "./../../images/me.jpg";
+import MetaTags from 'react-meta-tags';
 
 
 
@@ -64,6 +65,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <MetaTags>
+            <title>Will McAllister | Software Engineer</title>
+            <meta id="meta-description" name="description" content="Where There's a Will, There's a Way!" />
+            <meta id="og-title" property="og:title" content="Will McAllister | Software Engineer" />
+            <meta id="og-image" property="og:image" content={preview} />
+        </MetaTags>
         <Helmet>
                 <meta charSet="utf-8" />
                 <title>Will McAllister | Software Engineer</title>
