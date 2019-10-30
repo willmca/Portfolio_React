@@ -17,6 +17,7 @@ import preview from "./../../images/preview.png"
 import "./App.css";
 import me from "./../../images/me.jpg";
 import MetaTags from 'react-meta-tags';
+import pdf from './../../images/resume.pdf'
 
 
 
@@ -83,9 +84,6 @@ class App extends Component {
                 <meta name="description" content="Will McAllister | Software Engineer"/>
                 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab&display=swap" rel="stylesheet" />
                 <link rel="apple-touch-icon" href={me} />
-
-
-
        </Helmet>
        <HeaderNav>
             <Link className="headerLinks"  to="/">
@@ -95,8 +93,7 @@ class App extends Component {
                 <li className="HeaderNavLinks">My Work</li>
             </Link>
                 <a className="headerLinks"
-                  href="https://docs.google.com/document/d/1yPOjjKHxHC2UtGSwJIIn4vhL-Db5Lw1MWmlBnHZabe4/"
-                  target="_blank" rel="noopener noreferrer">
+                  href={pdf} target="_blank" rel="noopener noreferrer">
                 <li className="HeaderNavLinks">Resumé</li>
                 </a>
             <div className="logos">
@@ -138,7 +135,7 @@ class App extends Component {
                   <li className="SideNav">Contact Me</li>
                 </Link> */}
                 <a className="links"
-                  href="https://docs.google.com/document/d/1x5_HZlT6-dOgHXLkvWtyHwwCQ3V0H1UeE8rvw63_QHE/edit?usp=sharing"
+                  href={pdf}
                   target="_blank" rel="noopener noreferrer"
                 >
                   <li className="SideNav">Resumé</li>
