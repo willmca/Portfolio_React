@@ -37,9 +37,67 @@ class Home extends Component{
                     </h1>
                 </div>
                 <div className="introHolder">
-                    <p className="intro">Full-stack Software Engineer with a passion for bringing a client's desires to life on the web. I enjoy working directly with people and businesses to help them achieve their goals. I bring to the table a relentless work-ethic and drive to succeed and help others do the same. My skills include React, Responsive Design, CSS, Javascript, Node, Express and more.</p>
+                    <p className="intro">Full-stack Software Engineer with a passion for bringing a client's desires to life on the web. I enjoy working directly with people and businesses to help them achieve their goals. I bring to the table a relentless work-ethic and drive to succeed and help others do the same.</p>
                 </div>
-                <div className="skillzHolder">
+                <div className="flip-card">
+                <div className="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Front-End Skills</h2>
+                        <div className="frontEndSkills">
+                            <div className="row1">
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={reactIcon} />
+                                <h4>React</h4>
+                            </div>
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={css} />
+                                <h4>CSS</h4>
+                            </div>
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={js} />
+                                <h4>Javascript</h4>
+                            </div>
+                        </div>
+                        <div className="row2">
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={html} />
+                                <h4>HTML</h4>
+                            </div>
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={responsive} />
+                                <h4>Responsive Design</h4>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="flip-card-back">
+                    <h2>Back-End Skills</h2> 
+                    <div className="frontEndSkills">
+                        <div className="row1">
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={node} />
+                                <h4>Node.js</h4>
+                            </div>
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={express} />
+                                <h4>Express.js</h4>
+                            </div>
+                        </div>
+                        <div className="row2">
+                        <div className="skillAndName">
+                                <img className="skillIcon" src={mongoose} />
+                                <h4>MongoDB</h4>
+                            </div>
+                            <div className="skillAndName">
+                                <img className="skillIcon" src={rest} />
+                                <h4>Rest APIs</h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {/* <div className="skillzHolder">
                     <h2 className="skillzTitle">Skills</h2>
                     <div className="skillzRowHolder">
                     <div className="skillzRow">
@@ -85,7 +143,7 @@ class Home extends Component{
                     </div>
                     </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="skillsHolder">
                     <p className="skills">When I'm not writing code I enjoy playing video games, playing basketball, watching my beloved Washington Wizards and Redskins disapoint me year after year, and hanging out with my dogs, Harley and Daisy. </p>
                 </div>
