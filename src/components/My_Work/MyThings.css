@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
 .container{
     display:flex;
     flex-direction:column;
@@ -21,6 +30,8 @@
 }
 .ProjectTitle{
     color:white;
+    font-family: 'Roboto Slab', serif;
+
 }
 .ProjectPhoto{
     width: 300px;
@@ -36,7 +47,8 @@
 
 }
 .ProjectDescription{
-font-size:18px;
+font-size:16px;
+font-family: 'Raleway', sans-serif;
 }
 .links{
     font-size:12px;
@@ -53,15 +65,22 @@ font-size:18px;
 }
 .tech{
     text-align: center;
-    font-size:20px;
+    font-size:22px;
+    font-family: 'Roboto Slab', serif;
+
 }
-@media (max-width:800px){
+@media (max-width:900px){
+    .ProjectInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
     .ProjectTitle{
         font-size:18px;
     }
     .ProjectPhoto{
     height:180px;
-    width:255px;
+    width: 90%;
     }
     .tech{
         font-size: 16px;
@@ -69,14 +88,11 @@ font-size:18px;
     .ProjectDescription{
         font-size:14px;
         padding:5px;
+        text-align: center;
         }
-    .ProjectInfo{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
     .projectLink{
     justify-content:space-between;   
+    font-family: 'Roboto Slab', serif;
     }
     h3{
         margin:10px;
@@ -94,5 +110,8 @@ font-size:18px;
     .ProjectPhoto{
         width:350px;
         height:300px;
+    }
+    .ProjectTitle{
+        font-size: 26px;
     }
 }

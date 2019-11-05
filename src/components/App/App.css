@@ -38,6 +38,8 @@ background-position: center center;
 h1{
   text-align:center;
   margin-top:50px;
+  font-family: 'Roboto Slab', serif;
+
 }
 main{
   margin-left:33%;
@@ -53,8 +55,9 @@ main{
 }
 .nameTitle{
   font-size:22px;
-  font-family: 'Roboto Slab', serif;
   margin-top:10px;
+  font-family: 'Roboto Slab', serif;
+
 }
 .logosAndPhoto{
   display:flex;
@@ -89,6 +92,7 @@ main{
   text-decoration:none;
   list-style: none;
   margin:15px;
+  font-family: 'Roboto Slab', serif;
 }
 .headerLinks:hover{
   background-color:skyblue;

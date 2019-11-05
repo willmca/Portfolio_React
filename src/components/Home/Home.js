@@ -37,17 +37,17 @@ class Home extends Component{
                     </h1>
                 </div>
                 <div className="introHolder">
-                    <p className="intro">Full-stack Software Engineer with a passion for bringing a client's desires to life on the web. I enjoy working directly with people and businesses to help them achieve their goals. I bring to the table a relentless work-ethic and drive to succeed and help others do the same.</p>
+                    <p className="intro" style={{ fontFamily: "Raleway", color: "black"}}>Full-stack Software Engineer with a passion for bringing a client's desires to life on the web. I enjoy working directly with people and businesses to help them achieve their goals. I bring to the table a relentless work-ethic and drive to succeed and help others do the same.</p>
                 </div>
                 <div className="flip-card">
                 <div className="flip-card-inner">
                     <div class="flip-card-front">
-                        <h2>Front-End Skills</h2>
+                        <h2 className="skillCardText">Front-End Skills</h2>
                         <div className="frontEndSkills">
                             <div className="row1">
                             <div className="skillAndName">
-                                <img className="skillIcon" src={reactIcon} />
-                                <h4>React</h4>
+                                <img className="skillIcon" src={html} />
+                                <h4>HTML</h4>
                             </div>
                             <div className="skillAndName">
                                 <img className="skillIcon" src={css} />
@@ -59,9 +59,9 @@ class Home extends Component{
                             </div>
                         </div>
                         <div className="row2">
-                            <div className="skillAndName">
-                                <img className="skillIcon" src={html} />
-                                <h4>HTML</h4>
+                        <div className="skillAndName">
+                                <img className="skillIcon" src={reactIcon} />
+                                <h4>React</h4>
                             </div>
                             <div className="skillAndName">
                                 <img className="skillIcon" src={responsive} />
@@ -71,7 +71,7 @@ class Home extends Component{
                         </div>
                     </div>
                     <div className="flip-card-back">
-                    <h2>Back-End Skills</h2> 
+                    <h2 className="skillCardText">Back-End Skills</h2> 
                     <div className="frontEndSkills">
                         <div className="row1">
                             <div className="skillAndName">
@@ -145,10 +145,10 @@ class Home extends Component{
                     </div>
                 </div> */}
                 <div className="skillsHolder">
-                    <p className="skills">When I'm not writing code I enjoy playing video games, playing basketball, watching my beloved Washington Wizards and Redskins disapoint me year after year, and hanging out with my dogs, Harley and Daisy. </p>
+                    <p className="skills" style={{ fontFamily: "Raleway", color: "black"}}>When I'm not writing code I enjoy playing video games, playing basketball, watching my beloved Washington Wizards and Redskins disapoint me year after year, and hanging out with my dogs, Harley and Daisy. </p>
                 </div>
                 <div className="contactHolder">
-                    <p className="contact">Please feel free to contact me via email at mcallister.william.r@gmail.com</p>
+                    <p className="contact" style={{ fontFamily: "Raleway", color: "black"}}>Please feel free to contact me via email at mcallister.william.r@gmail.com</p>
                 </div>
     
             </div>
