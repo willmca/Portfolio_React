@@ -1,117 +1,117 @@
 @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-
-.container{
-    display:flex;
-    flex-direction:column;
-    width:85%;
-    min-height:100vh;
-    margin:0 auto;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Raleway"), local("Raleway-Regular"),
+    url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-.Project{
-    display:flex;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.Project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: skyblue;
+  margin-top: 10px;
+}
+.ProjectInfo {
+  padding: 10px;
+  height: 100%;
+  color: white;
+}
+.ProjectTitle {
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.ProjectPhoto {
+  width: 300px;
+  max-height: 200px;
+  padding-right: 10px;
+  float: left;
+}
+.ProjectLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: underline;
+}
+.ProjectDescription {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+.links {
+  font-size: 12px;
+}
+.links:hover {
+  transform: scale(1.5);
+  background-color: lightblue;
+}
+.projectLink {
+  color: white;
+}
+.projectLink:hover {
+  transform: scale(1.2);
+}
+.tech {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+}
+@media (max-width: 900px) {
+  .ProjectInfo {
+    display: flex;
     flex-direction: column;
-    width:100%;
-    height:fit-content;
-    margin:0 auto;
-    background-color:skyblue;
-    margin-top:10px;
-}
-.ProjectInfo{
-    padding:10px;
-    height:100%;
-    color:white;
-}
-.ProjectTitle{
-    color:white;
-    font-family: 'Roboto Slab', serif;
-
-}
-.ProjectPhoto{
-    width: 300px;
-    max-height: 200px;
-    padding-right:10px;
-    float: left;
-}
-.ProjectLinks{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    text-decoration: underline;
-
-}
-.ProjectDescription{
-font-size:16px;
-font-family: 'Raleway', sans-serif;
-}
-.links{
-    font-size:12px;
-}
-.links:hover{
-    transform: scale(1.5);
-    background-color:lightblue;
-}
-.projectLink{
-    color:white;
-}
-.projectLink:hover{
-    transform: scale(1.2);
-}
-.tech{
-    text-align: center;
-    font-size:22px;
-    font-family: 'Roboto Slab', serif;
-
-}
-@media (max-width:900px){
-    .ProjectInfo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-     }
-    .ProjectTitle{
-        font-size:18px;
-    }
-    .ProjectPhoto{
-    height:180px;
+    align-items: center;
+  }
+  .ProjectTitle {
+    font-size: 18px;
+  }
+  .ProjectPhoto {
+    height: 180px;
     width: 90%;
-    }
-    .tech{
-        font-size: 16px;
-    }
-    .ProjectDescription{
-        font-size:14px;
-        padding:5px;
-        text-align: center;
-        }
-    .projectLink{
-    justify-content:space-between;   
-    font-family: 'Roboto Slab', serif;
-    }
-    h3{
-        margin:10px;
-        font-size:12px;
-    }
+  }
+  .tech {
+    font-size: 16px;
+  }
+  .ProjectDescription {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+  }
+  .projectLink {
+    justify-content: space-between;
+    font-family: "Roboto Slab", serif;
+  }
+  h3 {
+    margin: 10px;
+    font-size: 12px;
+  }
 }
-@media (max-width:500px){
-    .container{
-        margin-top:75px;
-        width:95%;
-    }
-    .ProjectDescription{
-        text-align:center;
-    }
-    .ProjectPhoto{
-        width:350px;
-        height:300px;
-    }
-    .ProjectTitle{
-        font-size: 26px;
-    }
+@media (max-width: 500px) {
+  .container {
+    margin-top: 75px;
+    width: 95%;
+  }
+  .ProjectDescription {
+    text-align: center;
+  }
+  .ProjectPhoto {
+    width: 350px;
+    height: 300px;
+  }
+  .ProjectTitle {
+    font-size: 26px;
+  }
 }

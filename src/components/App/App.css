@@ -1,144 +1,157 @@
-.SideNav{
+.SideNav {
   list-style-type: none;
-  font-size:24px;
-  text-align:center;
-  margin:20px 0;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
 }
-.errorText{
+.errorText {
   text-align: center;
 }
-ul{
-margin:0; 
-padding:0;
-margin-bottom:10px;
+ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
-.placeholder{
-height:200px;
-width:200px;
-border:solid white 1px;
-border-radius:100%;
-background-image:url('./../../images/me.jpg');
-background-size:cover;
-background-position: center center;
+.placeholder {
+  height: 200px;
+  width: 200px;
+  border: solid white 1px;
+  border-radius: 100%;
+  background-image: url("./../../images/me.jpg");
+  background-size: cover;
+  background-position: center center;
 }
-.footer{
+.footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.SideNav:hover{
-  transform:scale(1.5);
-  background-color:skyblue;
+.SideNav:hover {
+  transform: scale(1.5);
+  background-color: skyblue;
 }
-h1{
-  text-align:center;
-  margin-top:50px;
-  font-family: 'Roboto Slab', serif;
-
+.errorImg {
+  max-width: 500px;
+  max-height: 1000px;
+  margin: 0 auto;
 }
-main{
-  margin-left:33%;
-  min-height:100vh;
-  /* background:linear-gradient(to right, white, whitesmoke); */
-  background-size:cover;
-}
-.links{
-  text-decoration: none;
-  color:white;
-  font-family: 'Roboto Slab', serif;
-
-}
-.nameTitle{
-  font-size:22px;
-  margin-top:10px;
-  font-family: 'Roboto Slab', serif;
-
-}
-.logosAndPhoto{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  position:relative;
-  bottom:3%;
-}
-.componentNav{
-  position:relative;
-  top:2%;
-}
-.logos{
+.errorDiv {
+  margin-top: 150px;
+  width: 100%;
   display: flex;
-  flex-direction:row;
+  flex-direction: column;
   justify-content: center;
-  position:relative;
-  top:35px;
+  align-items: center;
 }
-.logo{
-  margin:0 8px;
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Roboto Slab", serif;
+}
+main {
+  margin-left: 33%;
+  min-height: 100vh;
+  /* background:linear-gradient(to right, white, whitesmoke); */
+  background-size: cover;
+}
+.links {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.nameTitle {
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: "Roboto Slab", serif;
+}
+.logosAndPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 3%;
+}
+.componentNav {
+  position: relative;
+  top: 2%;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 35px;
+}
+.logo {
+  margin: 0 8px;
   transform: scale(1.5);
 }
-.logo:hover{
-  opacity:0.5;
+.logo:hover {
+  opacity: 0.5;
 }
-.logoLinks{
-  color:white;
+.logoLinks {
+  color: white;
 }
-.headerLinks{
-  color:white;
-  text-decoration:none;
+.headerLinks {
+  color: white;
+  text-decoration: none;
   list-style: none;
-  margin:15px;
-  font-family: 'Roboto Slab', serif;
+  margin: 15px;
+  font-family: "Roboto Slab", serif;
 }
-.headerLinks:hover{
-  background-color:skyblue;
+.headerLinks:hover {
+  background-color: skyblue;
   transform: scale(1.3);
 }
-.headerLogoLinks{
-  color:white;
+.headerLogoLinks {
+  color: white;
 }
-@media (max-width:700px){
-  .SideNav{
-    font-size:24px;
+@media (max-width: 700px) {
+  .SideNav {
+    font-size: 24px;
   }
-  .SideNav:hover{
-    transform:scale(1.1);
+  .SideNav:hover {
+    transform: scale(1.1);
   }
-}
-@media (max-width:650px){
-  .placeholder{
-    width:125px;
-    height:125px;
-  }
-  .nameTitle{
-    font-size:14px;
-  }
-  .logosAndPhoto{
-    margin-top:-50%;  
+  .errorImg {
+    max-width: 350px;
   }
 }
-@media (max-width:500px){
-  main{
-    margin-left:0;
+@media (max-width: 650px) {
+  .placeholder {
+    width: 125px;
+    height: 125px;
   }
-  .logos{
-    top:0;
-    left:50px;
+  .nameTitle {
+    font-size: 14px;
+  }
+  .logosAndPhoto {
+    margin-top: -50%;
   }
 }
-@media (max-width:400px){
-  .placeholder{
-    width:100px;
-    height:100px;
+@media (max-width: 500px) {
+  main {
+    margin-left: 0;
   }
-  .nameTitle{
-    font-size:10px;
+  .logos {
+    top: 0;
+    left: 50px;
   }
-  .logosAndPhoto{
-    margin-top:-225%;  
+}
+@media (max-width: 400px) {
+  .placeholder {
+    width: 100px;
+    height: 100px;
+  }
+  .nameTitle {
+    font-size: 10px;
+  }
+  .logosAndPhoto {
+    margin-top: -225%;
   }
 }
