@@ -103,6 +103,7 @@ main {
   list-style: none;
   margin: 15px;
   font-family: "Roboto Slab", serif;
+  font-size:20px;
 }
 .headerLinks:hover {
   background-color: skyblue;
@@ -143,6 +144,14 @@ main {
     left: 50px;
   }
 }
+@media (max-width:455px){
+  .headerLinks{
+    font-size:16px;
+  }
+  .logos {
+    left: 30px;
+  }
+}
 @media (max-width: 400px) {
   .placeholder {
     width: 100px;
@@ -153,5 +162,27 @@ main {
   }
   .logosAndPhoto {
     margin-top: -225%;
+  }
+  .headerLinks{
+    font-size:14px;
+  }
+  .logos {
+    left: 30px;
+  }
+}
+@media (max-width:375px){
+  .headerLinks{
+    font-size:12px;
+  }
+  .logos {
+    left: 30px;
+  }
+}
+@media (max-width:350px){
+  .headerLinks{
+    font-size:10px;
+  }
+  .logos {
+    left: 10px;
   }
 }
