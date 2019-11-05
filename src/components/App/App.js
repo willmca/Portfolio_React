@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Home from "../Home/Home";
 import MyThings from "../My_Work/MyThings";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
+import error from './../../images/404.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -58,6 +59,13 @@ align-items:center;
   flex-direction:row;
 }
 `
+const Page404 = ({ location }) => (
+  <div>
+     <img src={error} alt="error" className="errorName"></img>
+     
+     <h2 className="errorText">will-mcallister.netlify.com<code>{location.pathname}</code> does not exist</h2>
+  </div>
+);
 
 class App extends Component {
   constructor(props) {
@@ -163,6 +171,7 @@ class App extends Component {
           </div>
         </NavBar>
         <main>
+          <Switch>
           <Route path="/" exact render={props => <Home {...props} />} />
           <Route path="/work" exact render={props => <MyThings {...props} />} />
           <Route path="/about" exact render={props => <About {...props} />} />
@@ -171,6 +180,8 @@ class App extends Component {
             exact
             render={props => <Contact {...props} />}
           />
+          <Route component ={Page404} />
+          </Switch>
         </main>
       </div>
     );
